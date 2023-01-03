@@ -1,0 +1,91 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	position: relative;
+}
+
+.videoscreen{
+	width: 80%;
+	cursor: pointer;
+}
+
+.controls{
+	width: 80%;
+	background-color: #222;
+	color: #fff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 12px 0;
+}
+
+.ctrl-btn{
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+.progress{
+	width: 70%;
+	height: 3px;
+	accent-color: steelblue;
+	border: none;
+	cursor: pointer;
+}
+
+
+.openfullscreen,.closefullscreen{
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.cntl-btn .fa-play{
+	color: steelblue;
+} 
+
+.cntl-btn .fa-stop{
+	color: tomato;
+}
+
+.displaytime{
+	margin-left: 10px;
+}
+
+
+.pannel{
+	background-color: steelblue;
+	color: #fff;
+	padding: 0 30px;
+
+	position: absolute;
+	left: 10%;
+	top: 80%;
+
+	z-index: -1;
+
+	transition: top .5s ease-out;
+}
+
+.container:hover .pannel{
+	top: 100%;
+}
